@@ -1,0 +1,10 @@
+import{A as P,i as S,p as L,s as M}from"./@remix-run-2b4bbbad.js";import{a as l,r as a}from"./react-af202798.js";/**
+ * React Router v6.8.1
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */function b(e,n){return e===n&&(e!==0||1/e===1/n)||e!==e&&n!==n}const w=typeof Object.is=="function"?Object.is:b,{useState:B,useEffect:D,useLayoutEffect:N,useDebugValue:O}=l;function R(e,n,s){const t=n(),[{inst:r},o]=B({inst:{value:t,getSnapshot:n}});return N(()=>{r.value=t,r.getSnapshot=n,u(r)&&o({inst:r})},[e,t,n]),D(()=>(u(r)&&o({inst:r}),e(()=>{u(r)&&o({inst:r})})),[e]),O(t),t}function u(e){const n=e.getSnapshot,s=e.value;try{const t=n();return!w(s,t)}catch{return!0}}function V(e,n,s){return n()}const j=typeof window<"u"&&typeof window.document<"u"&&typeof window.document.createElement<"u",I=!j,$=I?V:R;"useSyncExternalStore"in l&&(e=>e.useSyncExternalStore)(l);const G=a.createContext(null),x=a.createContext(null);function T(){return a.useContext(x)!=null}var E;(function(e){e.UseBlocker="useBlocker",e.UseRevalidator="useRevalidator"})(E||(E={}));var y;(function(e){e.UseLoaderData="useLoaderData",e.UseActionData="useActionData",e.UseRouteError="useRouteError",e.UseNavigation="useNavigation",e.UseRouteLoaderData="useRouteLoaderData",e.UseMatches="useMatches",e.UseRevalidator="useRevalidator"})(y||(y={}));function A(e){let{basename:n="/",children:s=null,location:t,navigationType:r=P.Pop,navigator:o,static:c=!1}=e;T()&&S(!1);let i=n.replace(/^\/*/,"/"),C=a.useMemo(()=>({basename:i,navigator:o,static:c}),[i,o,c]);typeof t=="string"&&(t=L(t));let{pathname:f="/",search:d="",hash:p="",state:v=null,key:h="default"}=t,m=a.useMemo(()=>{let g=M(f,i);return g==null?null:{pathname:g,search:d,hash:p,state:v,key:h}},[i,f,d,p,v,h]);return m==null?null:a.createElement(G.Provider,{value:C},a.createElement(x.Provider,{children:s,value:{location:m,navigationType:r}}))}var U;(function(e){e[e.pending=0]="pending",e[e.success=1]="success",e[e.error=2]="error"})(U||(U={}));new Promise(()=>{});export{A as R};

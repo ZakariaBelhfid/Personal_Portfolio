@@ -1,0 +1,1 @@
+import{r as n,q as l,a}from"./index-156603c9.js";const c=t=>{const e=n.useRef(null);return n.useEffect(()=>(e.current&&l.init(e.current,{max:45,scale:1,speed:450,...t.options}),()=>{var r,i;return(i=(r=e.current)==null?void 0:r.vanillaTilt)==null?void 0:i.destroy()}),[t.options]),a("div",{ref:e,...t,children:t.children})};export{c as T};
